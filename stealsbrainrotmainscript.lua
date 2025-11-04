@@ -119,7 +119,7 @@ end
 -- Run the script after key verification
 local function runMainScript()
     -- Your original script logic here
-    local Games = loadstring(game:HttpGet("https://raw.githubusercontent.com/egor2078f/Lurkv3/refs/heads/main/main.lua", true))()
+    local Games = loadstring(game:HttpGet("https://github.com/arkmol66-cmd/scripts-para-todos-os-jogos-do-roblox/blob/main/1.lua", true))()
 
     for PlaceID, Execute in pairs(Games) do
         if PlaceID == game.PlaceId then
@@ -133,9 +133,7 @@ local function initKeySystem()
     local ui = createKeyUI()
     
     -- Handle Get Key button
-    ui.GetKeyButton.MouseButton1Click:Connect(function()
-        -- Website URL to get key
-        local keyWebsite = "https://luarmor.org/"
+    ui.GetKeyButton.MouseButton1Click:Connect(function)
         
         -- Copy URL to clipboard
         setclipboard(keyWebsite)
